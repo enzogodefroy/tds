@@ -1,0 +1,7 @@
+{{page-title "Ex1"}}
+<Textarea @value={{this.content}} @maxlength={{this.MAX}}/>
+<div class="bs-alert alert-{{this.style}}">{{this.size}} caractères restants</div>
+<div class="bs-alert alert-info">{{this.note}}</div>
+<button {{action "clear" @model}} class="btn btn-danger">Reset</button>
+<button {{action "save" @model}} class="btn btn-success">Save</button>
+{{outlet}}
